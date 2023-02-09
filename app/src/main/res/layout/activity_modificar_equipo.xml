@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ModificarEquipo" >
+
+    <TextView
+        android:id="@+id/txtModificarEquipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Modificar Equipo"
+        android:textColor="#000000"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/editTxtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre:"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTxtCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ciudad:"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTxtPuntos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Puntos:"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnInsertar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Insertar" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Editar" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Eliminar" />
+
+    <ListView
+        android:id="@+id/lvEquipos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

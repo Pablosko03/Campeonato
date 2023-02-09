@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ModificarPartidos">
+
+    <TextView
+        android:id="@+id/textPartidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Modificar Partidos"
+        android:textColor="#000000"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/editTxtEquipo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Equipo local:"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTxtPuntosLoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Puntuacion equipo local:"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTxtEquipo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Equipo visitante:"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTxtPuntosVis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Puntuacion equipo visitante:"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnInsertarPar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="insertar" />
+
+    <Button
+        android:id="@+id/btnEditarPar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="editar" />
+
+    <Button
+        android:id="@+id/btnEliminarPar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="eliminar" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
